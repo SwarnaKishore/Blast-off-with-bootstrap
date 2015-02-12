@@ -1,2 +1,1 @@
-# Blast-off-with-bootstrap
-Free bootstrap themes and templates
+# swarnakishore.github.io/Blast-off-with-bootstrap
