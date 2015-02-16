@@ -252,7 +252,7 @@ a:focus {
    
 }
 
-.download-section {
+.about-section {
     width: 100%;
   
     color: #fff;
@@ -275,7 +275,7 @@ a:focus {
         padding-top: 120px;
     }
 
-    .download-section {
+    .about-section {
         padding: 100px 0;
     }
 
@@ -360,4 +360,83 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+
+.dAnim
+{
+    padding:5px;
+    font-family:Georgia,Verdana;
+    border:1px solid #bbb;
+    display:inline-block;
+    position:relative;
+
+    /* on Mouseout animation */
+    /* The -webkit- and -ms- vendor prefixes are added */
+    /* for chrome and ie10+ comptability */
+    transition: transform .2s ease-out;  
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -ms-transition: -ms-transform .2s ease-out;
+
+    transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+
+    /* CSS3 Stripes as a Background Image*/
+    background-image: linear-gradient(135deg,#c2c2c2 25%,#dadada 25%,#dadada 50%, #c2c2c2 50%, #c2c2c2 75%,#dadada 75%,#dadada 100%);
+    background-image: -moz-linear-gradient(135deg,#c2c2c2 25%,#dadada 25%,#dadada 50%, #c2c2c2 50%, #c2c2c2 75%,#dadada 75%,#dadada 100%);
+    background-image: -ms-linear-gradient(135deg,#c2c2c2 25%,#dadada 25%,#dadada 50%, #c2c2c2 50%, #c2c2c2 75%,#dadada 75%,#dadada 100%);
+    background-image: -o-linear-gradient(135deg,#c2c2c2 25%,#dadada 25%,#dadada 50%, #c2c2c2 50%, #c2c2c2 75%,#dadada 75%,#dadada 100%);
+    background-image: -webkit-gradient(linear, 100% 100%, 0 0,color-stop(.25, #dadada), color-stop(.25, #c2c2c2),color-stop(.5, #c2c2c2),color-stop(.5, #dadada),color-stop(.75, #dadada),color-stop(.75, #c2c2c2),color-stop(1, #c2c2c2));
+    background-image: -webkit-linear-gradient(135deg,#c2c2c2 25%,#dadada 25%,#dadada 50%, #c2c2c2 50%, #c2c2c2 75%,#dadada 75%,#dadada 100%);
+    background-size: 40px 40px;
+        
+    /* Background stripes animation */
+    animation: bganim 3s linear 2s infinite;
+    -webkit-animation: bganim 3s linear 2s infinite;
+    -ms-animation: bganim 3s linear 2s infinite;
+
+    z-index:98;
+}
+
+@keyframes bganim { from {background-position:0px;} to { background-position:40px;} }
+@-webkit-keyframes bganim { from {background-position:0px;} to { background-position:40px;} }
+@-ms-keyframes bganim { from {background-position:0px;} to { background-position:40px;} }
+ 
+.dAnim:hover
+{
+    /* The hovered element needs to be the top element */
+    z-index:99;
+  
+    /* Main div mouseover animation */
+    transform: scale(1.3) rotate(2deg);
+    -webkit-transform: scale(1.3) rotate(2deg);
+    -ms-transform: scale(1.3) rotate(2deg);
+}
+.dAnim div
+{
+    border:1px solid transparent;
+    background-color:white;
+
+    /* Inside divs mouseout animation */
+    transition: transform .2s ease-out;  
+    -webkit-transition: -webkit-transform .2s ease-out;  
+    -ms-transition: -ms-transform .2s ease-out;  
+
+    transition-delay:.1s;
+    -webkit-transition-delay:.1s;
+    -ms-transition-delay:.1s;
+
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+}
+.dAnim:hover div
+{
+    border:1px solid #444;
+
+    /* Inside divs mouseover animation */
+    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
 }
