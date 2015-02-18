@@ -26,10 +26,10 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-navbar">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="main-navbar" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -48,10 +48,10 @@
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#content">View projects</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact-section">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -64,14 +64,14 @@
     <header class="header-image">
         <div class="headline">
             <div class="container">
-                <h1>Website name</h1>
-                <h2>Introductory notes</h2>
+                <h1 style="color:rgba(221, 221, 221, 1)">Website name</h1>
+                <h2 style="color:rgba(221, 221, 221, 1)">Introductory notes</h2>
             </div>
         </div>
     </header>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" id="content">
 
         <hr class="featurette-divider">
 
@@ -108,6 +108,53 @@
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
         </div>
+     <hr class="featurette-divider">
+        
+        <section id="contact-section">
+      <div class="container">
+      <div class="row clearfix">
+        <div class="col-md-12">
+          <h1 class="text-center section-title-white">Contact us</h1>
+          <!-- .contact-form -->
+          <div class="contact-form">
+            <div class="contact-form-box">
+              <form id="ajax-contacts">
+                <div class="message-contact-box">
+                  <div id="message-contact"></div>
+                </div>
+                <fieldset>
+                  <div class="form-group row clearfix col-lg-12">
+                    <div class="form-element form-element-input col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <input class="form-control" type="text" name="name" value="" placeholder="Your Name">
+                    </div>
+                    <div class="form-element col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <input class="form-control" type="text" name="email" value="" placeholder="Your E-Mail">
+                    </div>
+                  </div>
+                  <div class="form-group row clearfix col-lg-12">
+                    <div class="form-element col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <input class="form-control" type="text" name="subject" value="" placeholder="Message Subject">
+                    </div>
+                  </div>
+                  <div class="form-group row clearfix col-lg-12">
+                    <div class="form-element col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <textarea class="form-control" name="message" rows="4" cols="25" placeholder="Leave Your Message"></textarea>
+                    </div>
+                    <div class="div-center clearfix">
+                      <p class="text-center">
+                        <input id="send-contact" class="btn btn-default btn-lg" type="submit" name="submit" value="Send Message">
+                      </p>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <!-- /.contact-form --> 
+        </div>
+      </div>
+    </div>
+  </section>
 
         <hr class="featurette-divider">
 
@@ -117,7 +164,7 @@
                 <div class="col-lg-4">
                     <p>Copyright &copy; Your Website 2014</p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-lg-offset-1">
                 	<ul class="share-buttons">
 	<li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank"><img src="img/flat_web_icon_set/black/Facebook.png"></a></li>
 	<li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img src="img/flat_web_icon_set/black/Twitter.png"></a></li>
