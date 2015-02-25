@@ -3,7 +3,7 @@
  width: 100%; height: 250px; margin-bottom: 30px; border-radius: 9px; float: left; overflow: hidden; position: relative; text-align: center; cursor: pointer; background: #ffffff;
 }
 .vision .screen, .vision .content { 
-width: 100%; height: 263px; border-radius: 5px; position: absolute; overflow: hidden; top: 0; left: 0; }
+width: 100%; height: 250px; border-radius: 5px; position: absolute; overflow: hidden; top: 0; left: 0; }
 .vision img { display: block; position: relative; }
 .vision h2 { text-transform: uppercase; color: #fff; text-align: center; position: relative; font-size: 17px; font-weight: bold; padding: 10px; margin: 20px 0 0 0; }
 .vision p { font-size: 14px; position: relative; color: #fff; padding: 10px 20px 20px; text-align: center; }
