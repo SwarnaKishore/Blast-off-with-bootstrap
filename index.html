@@ -466,14 +466,28 @@
     <!-- Footer -->
     <footer>
      
-        	<div class="row"><div class="col-lg-4 col-lg-offset-4">
-           	<ul class="social-icons icon-circle icon-rotate list-unstyled list-inline"> 
-	      <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank"><i class="fa fa-facebook"></i></a> </li> 
-	      <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank"><i class="fa fa-twitter"></i></a> </li>   
-	      <li> <a href="https://plus.google.com/share?url=" target="_blank"><i class="fa fa-google-plus"></i></a> </li> 
-	      </ul>       
-           </div>
-           </div>
+        	<div class="row"><div class="col-lg-4 col-lg-offset-5">
+        		<div class="row">
+        			<div class="col-lg-2">
+        				<div class="fb-share-button" data-href="http://swarnakishore.github.io/Blast-off-with-bootstrap/" data-layout="button"></div>
+        			</div>
+        			<div class="col-lg-2">
+        				<a target="_blank" href="https://twitter.com/share" class="twitter-share-button" 
+	      	data-text="Check out Blast with bootstrap website for free bootstrap themes and templates" data-via="Swarna_Kishoree" data-count="none"></a>
+        			</div>
+        			<div class="col-lg-2">
+        				<div class="g-plus" data-action="share" data-annotation="none" data-href="http://swarnakishore.github.io/Blast-off-with-bootstrap/"></div>
+        			</div>
+        		</div>
+           	      
+         </div>
+    </div><!--row-->
+    
+    
+    
+    
+    
+    
            
            <div class="row"> <div class="col-lg-4 col-lg-offset-4">
         		 <p>Copyright &copy; Blast off with bootstrap 2015</p>
@@ -483,9 +497,24 @@
     </footer>
 
     <!-- jQuery -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <script src="js/jquery.js"></script>
     
     <script src="js/wow.min.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+    if(!d.getElementById(id))
+    {js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
+    (document, 'script', 'twitter-wjs');
+    	</script>
 <script>
  new WOW().init();
 </script>
