@@ -273,9 +273,9 @@
     
 		  	<a href="http://swarnakishore.github.io/signInTemplate/" target="_blank">
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					  <div class="view view-fourth">
+					  <div class="vision vision-effect">
                         <img src="img/SignIn.png" class="img-responsive">                   
-	                        <div class="mask">	                   
+	                        <div class="screen">	                   
 		                         <h2 style="text-align:center;font-size:28px;">SignIn template</h2>
                   <p>Bootstrap sign in form in panel</p>
                   
@@ -291,9 +291,9 @@
 				
 				<a href="http://swarnakishore.github.io/signUpTemplate/" target="_blank">
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					 <div class="view view-fourth">
+					 <div class="vision vision-effect">
                         <img src="img/signUp.png" class="img-responsive">
-	                    <div class="mask">
+	                    <div class="screen">
 	                        <h2 style="text-align:center;font-size:28px;">Signup template</h2>
                   <p>Bootstrap sign un form in panel</p>
                   
@@ -311,9 +311,9 @@
 				
 				<a href="http://swarnakishore.github.io/SidebarMenu/" target="_blank">
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					 <div class="view view-fourth">
+					 <div class="vision vision-effect">
                         <img src="img/sideMenu.jpg" class="img-responsive">
-	                     <div class="mask">
+	                     <div class="screen">
 	                       <h2 style="text-align:center;font-size:28px;">Offcanvas menu</h2>
                   <p>A bootstrap template with off canvas navigation</p>
                   
@@ -337,9 +337,9 @@
 				
 				<a href="http://swarnakishore.github.io/fullWidthCarouselTemplate/" target="_blank">	
 			  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					 <div class="view view-fourth">
+					 <div class="vision vision-effect">
                         <img src="img/carosel.jpg" class="img-responsive">
-	                     <div class="mask">
+	                     <div class="screen">
 	                       <h2 style="text-align:center;font-size:28px;">Carousel</h2>
                   <p>A full width carousel template</p>
                   
@@ -357,9 +357,9 @@
 				
 				<a href="http://swarnakishore.github.io/fixedWidthLayout/" target="_blank">
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					  <div class="view view-fourth">
+					  <div class="vision vision-effect">
                         <img src="img/fixedWidthLayout.png" class="img-responsive">
-	                     <div class="mask">
+	                     <div class="screen">
 	                        <h2 style="text-align:center;font-size:28px;">Fixed width layout</h2>
                   <p>A template with fixed width layout</p>
                   
@@ -376,9 +376,9 @@
 				
 				<a href="http://swarnakishore.github.io/FixedTopNavbarWithJumbotron/" target="_blank">
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					 <div class="view view-fourth">
+					 <div class="vision vision-effect">
                        <img src="img/fixedTopNavbarwithJumbotron.png" class="img-responsive">
-	                      <div class="mask">
+	                      <div class="screen">
 	                         <h2 style="text-align:center;font-size:28px;">Fixed top navbar</h2>
                   <p>A fixed top navbar with jumbotron</p>
                   
@@ -402,9 +402,9 @@
 					
 					<a href="http://swarnakishore.github.io/DashboardTemplate/" target="_blank">
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					 <div class="view view-fourth">
+					 <div class="vision vision-effect">
                        <img src="img/dashboard.png" class="img-responsive">
-	                     <div class="mask">
+	                     <div class="screen">
 	                        <h2 style="text-align:center;font-size:28px;">Dashboard template</h2>
                   <p>A sample bootstrap dashboard template</p>
                   
@@ -420,10 +420,10 @@
 				
 				<a href="http://swarnakishore.github.io/BlogTemplate/" target="_blank">
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					  <div class="view view-fourth">
+					  <div class="vision vision-effect">
                        <img src="img/blog.png" class="img-responsive">
                         
-	                     <div class="mask">
+	                     <div class="screen">
 	                        <h2 style="text-align:center;font-size:28px;">Blog template</h2>
                   <p>A simple Bootstrap starter template for creating blog posts. Template contains a side bar with signUp form and list of categories </p>
                   
@@ -440,9 +440,9 @@
 				
 				<a href="http://swarnakishore.github.io/ContactForm/" target="_blank">
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					  <div class="view view-fourth">
+					  <div class="vision vision-effect">
                         <img src="img/contact.png" class="img-responsive">
-	                     <div class="mask">
+	                     <div class="screen">
 	                       <h2 style="text-align:center;font-size:28px;">Contact form</h2>
                   <p>Bootstrap contact form template</p>
                   
@@ -490,7 +490,7 @@
     
            
            <div class="row"> <div class="col-lg-4 col-lg-offset-4">
-        		 <p>Copyright &copy; Blast off with bootstrap 2015</p>
+        		 <p>Copyright &copy; <a href="http://swarnakishore.github.io/Blast-off-with-bootstrap/">Blast off with bootstrap </a> <span id="year"></span></p>
         	</div></div>
           
         
@@ -521,7 +521,9 @@
 <script>
 	$(function () {
   $('[data-toggle="tooltip"]').tooltip()
-})
+});
+var dt = new Date();
+    document.getElementById("year").innerHTML = dt.getFullYear();
 </script>
 
     <!-- Bootstrap Core JavaScript -->
